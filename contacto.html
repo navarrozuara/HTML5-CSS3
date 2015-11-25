@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elisa Navarro Zuara</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Practica 10 Web Elisa Navarro" />
+	<meta name="keywords" content="web,diw,Elisa Navarro,iesgc,daw" />
+	<meta name="author" content="Elisa Navarro Zuara" />
+	<meta http-equiv="refresh" content="500" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div id="search">
+		<div id="logo">
+			Web Designer Blog
+		</div>
+		<div id="search-module">
+			<form action="/" method="get" class="search-form">
+				<label>Search</label>
+ 				<input type="text" name="search" value="" />
+  				<a href="#"><object data="img/buscar.svg" type="image/svg+xml"></object></a>
+			</form>
+		</div>
+	</div>
+	<div id="principal" itempscope itemtype="http://www.data-vocabulary.org/Person">
+		<header>
+			<h1>Web Designer Blog</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="noticias.html">Noticias</a></li>
+					<li><a href="diseno.html">HTML5 y CSS3</a></li>
+					<li><a href="sobremi.html">Sobre Mi</a></li>
+					<li><a href="contacto.html">Contacto<canvas id="iconocontacto" width="50" height="50"></canvas></a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="contenido">
+			<article id="formulario">
+				<header>
+					
+				</header>
+				<form action="php/enviamail.php" method="post">
+				
+					<table border=0>
+						<tr>
+							<td width=50%>
+								<p style="text-align:right;">Nombre</p>
+							</td>
+							<td width=50%>
+								<input type="text" size=50% name="nombre" required/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p style="text-align:right;">Email</p>
+							</td>
+							<td>
+								<input type="email" size=50% value="ejemplo: usuario@dominio.com" name="email"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p style="text-align:right;">Escribe tu mensaje</p>
+							</td>
+							<td>	
+								<textarea cols=50% rows=6 name="mensaje"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td>
+								<input id="btn" type="submit" value="Enviar">
+							</td>
+						</tr>
+					</table>
+
+				</form>
+			</article>
+		</div>
+		<footer>
+			&copy; Web Designer 2015
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/canvas.js"></script>
+</body>
+</html>
